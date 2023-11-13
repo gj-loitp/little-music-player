@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:a="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
-  package="com.martinmimigames.littlemusicplayer"
-  a:versionCode="13"
-  a:versionName="2.11">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.martinmimigames.littlemusicplayer"
+          a:versionCode="15"
+          a:versionName="2.13">
 
-  <uses-permission a:name="android.permission.POST_NOTIFICATIONS" />
-  <uses-permission a:name="android.permission.FOREGROUND_SERVICE" />
-  <uses-permission a:name="android.permission.INTERNET" />
-  <uses-permission
-    a:name="android.permission.READ_EXTERNAL_STORAGE"
-    tools:ignore="ScopedStorage" />
+  <uses-permission a:name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission a:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission a:name="android.permission.INTERNET"/>
+  <uses-permission a:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission a:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+  <uses-permission a:name="android.permission.READ_MEDIA_VIDEO"/>
+  <uses-permission a:name="android.permission.READ_MEDIA_AUDIO"/>
 
   <application
     a:icon="@drawable/ic_launcher"
@@ -31,7 +32,8 @@
 
     <service
       a:name=".Service"
-      a:exported="false" />
+      a:exported="false"
+      a:foregroundServiceType="mediaPlayback"/>
 
     <activity
       a:name=".Launcher"
@@ -43,6 +45,7 @@
       <intent-filter tools:ignore="AppLinkUrlError">
         <action a:name="android.intent.action.VIEW" />
         <action a:name="android.intent.action.SEND" />
+        <action a:name="android.intent.action.SEND_MULTIPLE"/>
 
         <category a:name="android.intent.category.DEFAULT" />
 

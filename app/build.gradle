@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-  compileSdkVersion 33
+  compileSdkVersion 34
 
   defaultConfig {
     minSdkVersion 1
-    targetSdkVersion 33
+    targetSdkVersion 34
   }
 
   /* just delete the signing configs if it doesn't work */
@@ -28,7 +28,7 @@ android {
     release {
       minifyEnabled true
       shrinkResources true
-      crunchPngs true
+      crunchPngs false
       proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
       // signingConfig signingConfigs.basic
     }

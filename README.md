@@ -1,12 +1,14 @@
 # Little Music Player
 
+![Icon](/docs/images/icon.png)
+
 [![Read License](https://img.shields.io/github/license/martinmimigames/little-music-player?style=flat-square)](https://github.com/martinmimigames/little-music-player/blob/main/LICENSE.md)
 
 [![Code Quality](https://img.shields.io/codefactor/grade/github/martinmimigames/little-music-player/main?style=flat-square)](https://www.codefactor.io/repository/github/martinmimigames/little-music-player)
 
 ## Descriptions
 
-A mini, simple, yet compatible notification-based audio player. 
+A mini, simple, yet compatible notification-based audio player.
 
 Open-sourced and publicly-viewable code for anyone worrying about being locked in or privacy
 invasion.
@@ -29,6 +31,10 @@ Location of webpage:
 
 You can find most information about *Little Music Player* just below.
 
+## screenshot
+
+![example screenshot](/docs/images/2.jpg)
+
 ## Notices
 
 The app will not be able to function properly without notification permissions being granted.
@@ -43,9 +49,11 @@ permission if the permission is not granted.
 
 ## Playlist support
 
-We currently partially support ```m3u```/```m3u8```.
+- Folder-based playlist on Android 5.0+
+- Temporary playlist via multi-share function
+- Partial ```m3u```/```m3u8``` support
 
-Features supported:
+```m3u```/```m3u8``` features supported:
 
 - Audio stream url (```http```/```https```)
 - Absolute audio path (e.g. ```/storage/emulated/0/Music/Example.mp3```)
@@ -99,7 +107,7 @@ based music player.
 We use the internet permission to allow for audio streaming, however such function is still being
 developed, and can be buggy.
 
-We use the read storage permission to open the audio files.
+We use the read storage/audio/video permission to open the audio files.
 Required for older devices, and ```m3u```/```m3u8``` processing.
 
 (Beta function)
@@ -127,9 +135,18 @@ Since we do not have telemetry in the app, we rely on you to report issues and g
 You can submit issues the following ways:
 
 - via [Github Issues](https://github.com/martinmimigames/little-music-player/issues)
-- via email: martinmimigames@gmail.com
+- via email: <martinmimigames@gmail.com>
 
 ## Latest Versions
+
+- v2.13
+  - Now support folder-based playlist for Android 5.0+
+  - Now support temporary playlist via multi-share
+
+- v2.12
+  - Fixed permission missing on newer android
+  - Now runs on Android 14 (emulator)
+  - Added permission blocks at the bottom of activity
 
 - v2.11
   - New loop function for non-streaming audio
@@ -155,11 +172,13 @@ You can submit issues the following ways:
 
 ## Installation
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-alt="Get it on F-Droid"
-height="80">](https://f-droid.org/packages/com.martinmimigames.littlemusicplayer)
+[<img src="https://martinmimigames.github.io/res/get-it-on/f-droid.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/com.martinmimigames.littlemusicplayer/)
 
-[Get it from GitHub](https://github.com/martinmimigames/little-file-explorer/releases/latest)
+[<img src="https://martinmimigames.github.io/res/get-it-on/github.png"
+     alt="Get it on Github"
+     height="80">](https://github.com/martinmimigames/little-music-player/releases/latest)
 
 [Get it from the official website](https://martinmimigames.github.io/projects/little-music-player)
 
@@ -169,7 +188,7 @@ Official Website at [https://martinmimigames.github.io](https://martinmimigames.
 
 ### Last update of README
 
-Date : 25-04-2023 dd-mm-yyyy
+Date : 20-07-2023 dd-mm-yyyy
 
 ### Important
 
